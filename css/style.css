@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: inline-flexbox;
+    background: linear-gradient(90deg, rgb(240, 146, 162), 60%, rgb(234, 234, 108));
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+
