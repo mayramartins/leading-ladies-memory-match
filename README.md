@@ -2,7 +2,7 @@
 
 ! (Link of the Game )
 
-# GAME INRO
+# GAME INTRO
 
 # WIREFRAME
 1. Display: Board with 4 columns including 4 rows each 
