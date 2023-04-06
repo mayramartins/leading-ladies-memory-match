@@ -1,22 +1,18 @@
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     background: linear-gradient(90deg, rgb(240, 146, 162), 60%, rgb(234, 234, 108));
-    justify-content: center;
-    align-items: center;
-    height: 100vmin
+
 }
 
 h1 {
     color: aliceblue;
-    text-align: center;
 }
 
-.board {
+#board {
     height: 600px;
     width: 600px;
     background: rgb(223, 188, 137);
@@ -40,7 +36,11 @@ h1 {
     transition: transform 1s;
 }
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+} */
+
+.flip-card-flipped {
     transform: rotateY(180deg);
 }
     

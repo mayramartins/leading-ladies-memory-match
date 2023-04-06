@@ -27,18 +27,16 @@ const images = [
 
 /*----- state variables -----*/
 let matchedCards = 0;
-let firstCard, secondCard;
+let firstCard, secondCard; //Set firstCard and secondCard with undefined value
 
 /*----- cached elements  -----*/
 // Get the cards to be clicked by the player
-const cards = document.querySelectorAll('.flip-card');
-
-  //const letsPlayBtn = 
+const cards = document.querySelectorAll('.flip-card-inner');
   
   
   
   
-  /*----- event listeners -----*/
+/*----- event listeners -----*/
   ///board.forEach.addEventListener('click', flipCard);
   cards.forEach(card => {
     card.addEventListener('click', flipCard);
@@ -46,32 +44,87 @@ const cards = document.querySelectorAll('.flip-card');
   
   
   /*----- functions -----*/
-  intitialize();
+  //intitialize();
   // function initialize {
     //}
     
     function flipCard(e) {
-      // The player clicks on the first card and flips the first card revealing the image
-      let selectedCard = e.target;
-      
-      //firstCard = selectedCard;
-      //secondCard = selectedCard
-      
-      if (selectedCard === firstCard) {
-        selectedCard.classList.toggle('flip');
-        console.log(selectedCard);
+    
+      // The player clicks on the first card and first card is selectedflips the first card revealing the image
+      let selectedCard = e.currentTarget;
+      if (firstCard == undefined) {
+        firstCard = selectedCard;
+        selectedCard.style.transform = 'rotateY(180deg)';
+        // The player clicks on the second card and the second card is selecionado 
+      } else if (secondCard == undefined) {
 
-        if(!firstCard) {
-          return firstCard = selectedCard;
-      
+        secondCard = selectedCard;
+        selectedCard.style.transform = 'rotateY(180deg)';
+      } else {
+        let firstImage = firstCard.children[0].children[0].getAttribute('src');
+        let secondImage = secondCard.children[0].children[0].getAttribute('src');
+        if (firstImage == secondImage) {
+          console.log('Its a Match');
+        } else {
+          console.log('Is Not a Match')
         }
-      
-      // The player clicks on the second card and the second card is revealed 
-      } else if (!secondCard) {
-    secondCard = selectedCard
-  }
+        firstCard.style.transform = '';
+        secondCard.style.transform = '';
 
-}
+        firstCard = undefined;
+        secondCard = undefined;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+//       //selectedCard.parentElement.parentElement.classList.add('flip-card-flipped');
+
+
+//       //firstCard = selectedCard;
+//       //secondCard = selectedCard
+      
+//       if (selectedCard === firstCard) {
+//         selectedCard.classList.toggle('flip');
+//         console.log(selectedCard);
+
+//         if(!firstCard) {
+//           return firstCard = selectedCard;
+      
+//         }
+      
+//       } else if (!secondCard) {
+//     secondCard = selectedCard
+//   }
+
+// }
 
 //function macthedCard() {
   
@@ -87,6 +140,5 @@ const cards = document.querySelectorAll('.flip-card');
 // renderBoard();
 // renderNumberOfClicks();
 //}
-
 
 
