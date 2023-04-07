@@ -1,6 +1,4 @@
-# PROJECT 1 - LEADING LADIES MEMORY MATCH
-
-https://mayramartins.github.io/leading-ladies-memory-match/
+\<LEADING LADIES MEMORY MATCH\>
 
 # GAME INTRO
 
@@ -31,5 +29,21 @@ As long as you win the flowers, play as many time as you want!
 ![Game Display](https://imgur.com/a/OvCSEDr)
 
 ![You win! Reset and play again](https://imgur.com/a/C5O6KJT)
+
+# TECHNOLOGIES USED
+
+- HTML
+- CSS
+- Javascript
+
+# GETTING STARTED
+
+https://mayramartins.github.io/leading-ladies-memory-match/
+
+# ICEBOX ITENS
+
+1. Ehnace UX Design with CSS
+2. Include animation
+3. Include music
 
 Leading Leadies Mamory Match - Led by Mayra Martins
