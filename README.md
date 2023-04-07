@@ -26,9 +26,9 @@ Everybody wins! The player performance is counted by number of clicks and second
 
 As long as you win the flowers, play as many time as you want!
 
-![Game Display](https://imgur.com/a/OvCSEDr)
+![Game Display](imgs/Screenshot1.jpeg)
 
-![You win! Reset and play again](https://imgur.com/a/C5O6KJT)
+![You win! Reset and play again](imgs/Screenshot2.jpeg)
 
 # TECHNOLOGIES USED
 
