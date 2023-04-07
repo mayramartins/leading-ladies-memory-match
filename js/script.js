@@ -7,17 +7,21 @@ let secondCardPos;
 let firstCardDom;
 let secondCardDom;
 let cards;
+let nclicks;
+let seconds;
+let interval;
 
 /*----- cached elements  -----*/
 const cardsEls = document.querySelectorAll('.flip-card-inner'); // cahce all my divs from html using the parameter flipcardinner
 const cardsParentsEls = document.querySelectorAll('.flip-card');
 const cardsContainerEl = document.querySelector('#board');
-const playBtn = document.querySelector('#play-btn');
 const resetBtn = document.querySelector('#reset-btn');
+const nclicksDom = document.querySelector('#nclicks');
+const secondsDom = document.querySelector('#seconds');
+
 
 /*----- event listeners -----*/
 cardsEls.forEach((card) => card.addEventListener("click", flipCard)); // Configure the event listener to listening to the click event and invoke the flipcard
-playBtn.addEventListener('click', playBtn);
 resetBtn.addEventListener("click", resetGame);
 
 // *----- functions -----*/
@@ -31,6 +35,8 @@ function intitialize() {
     [0, 0, 0, 0],
     [0, 0, 0, 0],
   ];
+  nclicks = 0;
+  seconds = 0;
 
   render();
   randomizeCardsDom();
@@ -38,7 +44,10 @@ function intitialize() {
 
 function resetGame() {
   cards = cards.map(() => [0, 0, 0, 0]);
+  nclicks = 0;
+  seconds = 0;
   render();
+  randomizeCardsDom();
 }
 
 function randomizeCardsDom() {
@@ -59,6 +68,14 @@ function flipCard(e) {
   const id = selectedCard.getAttribute("id");
   const row = id.charAt(3); // get the fourth letter of the row
   const col = id.charAt(1); // get the second letter of the column
+
+  nclicks = nclicks + 1;
+  if (nclicks == 1) {
+    interval = setInterval(() => {
+      seconds = seconds + 1;
+      render();
+    }, transitionTime);
+  }
 
   if (firstCardDom == undefined) {
     firstCardPos = [row, col];
@@ -107,4 +124,20 @@ function render() {
       card.style.transform = newValue;
     }
   });
+
+  nclicksDom.innerHTML = nclicks;
+  secondsDom.innerHTML = seconds + "s"
+
+  let gameFinished = true;
+  cards.forEach(lines => {
+    lines.forEach(cel => {
+      if(cel == 0) gameFinished = false;
+    });
+  })
+  if (gameFinished == true) {
+    resetBtn.style.visibility = "visible";
+    clearInterval(interval);
+  } else {
+    resetBtn.style.visibility = "hidden";
+  }
 }
