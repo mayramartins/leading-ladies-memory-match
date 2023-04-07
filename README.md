@@ -1,33 +1,35 @@
-# PROJECT 1 - CONCENTRATION GAME (MEMORY GAME)
+# PROJECT 1 - LEADING LADIES MEMORY MATCH
 
-! (Link of the Game )
+https://mayramartins.github.io/leading-ladies-memory-match/
 
 # GAME INTRO
 
-# WIREFRAME
-1. Display: Board with 4 columns including 4 rows each 
-2. Let's Play game button
-3. Timer: 60 seconds counting up from 0 to 60
-4. Count the number of cliicks to check player's performance 
-5. Message display: You win the game!
+Welcome to Leading Ladies Memory Match - the game that celebrates women empowerment and the beauty of flowers!
 
-# PSEUDOCODE 
-- Set the game with 16 cards unrevealed
-- Initialize the game with “play game” button
-- Set the timer start to count up starting with 0 to 60 seconds
-    > Player clicks on a first card and first card is revealed
-    > Player clicks on a second card and second image is revealed 
-    > If card 1 and card 2 don’t match, both cards turns into unrevealed within 1 second
-    > Player has the flexibility to click in any card until finds a match and the cards will be unrevealed
-    > Player finds a match and both matched cards sets in the screen unrevealed (freeze): undetermined time
-    > Player can keep play untiil finds all the matches
-    > While the number of the clicks are counted in the screen to demonstrate player’s performance 
-    > Once player finds all the matching cards message displayed: You win the game!
+This memory game is not just about matching cards - it brings the grace and resilience of flowers and just as flowers weather storms, women too have endured challenges and adversity, blossoming into forces of nature to be reckoned with. That's why everybody wins!
+
+# INSTRUCTIONS
+
+- The goal of the game is to find all the matching flowers
+- The game starts with the board of 16 unrevealed cards
+- The player start the game by clicking in any card and the flower is revealed
+- The timer starts to counting the seconds
+- The number of clicks is displayed on the top
+- The logic of the game
+- The player finds all the matching cards
+- YOU WIN!
+- Reset the game and play again
+
+# WIN LOGIC
+
+Everybody wins! The player performance is counted by number of clicks and seconds displayed, so the player can challenge itself by revealing all the flowers within less seconds and # of clicks.
 
 # RULES
 
+As long as you win the flowers, play as many time as you want!
 
+![Game Display](https://imgur.com/a/OvCSEDr)
 
+![You win! Reset and play again](https://imgur.com/a/C5O6KJT)
 
-
-
+Leading Leadies Mamory Match - Led by Mayra Martins
