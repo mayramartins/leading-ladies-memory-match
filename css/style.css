@@ -5,39 +5,36 @@
 
 body {
     background: linear-gradient(90deg, rgb(240, 146, 162), 60%, rgb(234, 234, 108));
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     color: aliceblue;
-    margin-left: 10vw;
-    text-align: center;
 }
 
-h1 > div {
-    font-size: 4vw;
+h2 {
+    font-size: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2vw;
+    color: aliceblue;
 }
 
-h1 > div div {
-    margin-left: 1vw;
+h2 > div {
+    margin-left: 6px;
     margin-right: 3vw;
 }
 
 #board {
-    height: 80vw;
-    max-height: 600px;
-    width: 80vw;
+    height: 400px;
+    width: 400px;
     max-width: 600px;
-    background: rgb(137, 214, 193);
-    padding: 5vw;
+    background: rgb(238, 224, 153);
     display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: repeat(4, 20%);
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
 }
 
 .flip-card {
@@ -77,34 +74,36 @@ h1 > div div {
     transform: rotateY(180deg);
 }
 
-.button-36 {
-  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
   color: #FFFFFF;
   cursor: pointer;
-  flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 16px;
   font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  margin-left: 180px;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  margin-left: 140px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  white-space: nowrap;
+  position: relative;
+  top: 18px;
 }
 
-.button-36:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-  transition-duration: .1s;
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
-@media (min-width: 768px) {
-  .button-36 {
-    padding: 0 2.6rem;
-  }
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
+

@@ -4,7 +4,7 @@
 
 Welcome to Leading Ladies Memory Match - the game that celebrates women empowerment and the beauty of flowers!
 
-This memory game is not just about matching cards - it brings the grace and resilience of flowers and just as flowers weather storms, women too have endured challenges and adversity, blossoming into forces of nature to be reckoned with. That's why everybody wins!
+This memory game is more than just matching cards. It symbolizes the grace and resilience of flowers. Just like how flowers can withstand storms, women have also faced challenges and adversity, yet they have blossomed into unstoppable forces of nature. This is why everyone is a winner in this game!
 
 # INSTRUCTIONS
 
@@ -13,14 +13,13 @@ This memory game is not just about matching cards - it brings the grace and resi
 - The player start the game by clicking in any card and the flower is revealed
 - The timer starts to counting the seconds
 - The number of clicks is displayed on the top
-- The logic of the game
 - The player finds all the matching cards
 - YOU WIN!
 - Reset the game and play again
 
 # WIN LOGIC
 
-Everybody wins! The player performance is counted by number of clicks and seconds displayed, so the player can challenge itself by revealing all the flowers within less seconds and # of clicks.
+Everyone is a winner! The player performance is counted by number of clicks and seconds displayed, so the player can challenge itself by revealing all the flowers within less seconds and # of clicks.
 
 # RULES
 
